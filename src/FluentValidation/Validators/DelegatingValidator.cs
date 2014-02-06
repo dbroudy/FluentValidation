@@ -57,12 +57,19 @@ namespace FluentValidation.Validators {
 			set { InnerValidator.CustomStateProvider = value; }
 		}
 
-		IPropertyValidator IDelegatingValidator.InnerValidator {
+	    public Func<object, bool> Condition
+	    {
+            get { return condition; }   
+	    }
+            
+         IPropertyValidator IDelegatingValidator.InnerValidator {
 			get { return InnerValidator; }
 		}
 	}
 
 	public interface IDelegatingValidator : IPropertyValidator {
+
+        Func<object, bool> Condition { get; }
 		IPropertyValidator InnerValidator { get; }
 	}
 }
