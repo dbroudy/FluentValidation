@@ -112,54 +112,60 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CreditCardError" xml:space="preserve">
+    <value>'{PropertyName}'이(가) 올바른 신용카드 번호가 아닙니다.</value>
+  </data>
   <data name="email_error" xml:space="preserve">
-    <value>'{PropertyName}' non è un indirizzo email valido.</value>
+    <value>'{PropertyName}'이(가) 올바른 이메일 주소가 아닙니다.</value>
   </data>
   <data name="equal_error" xml:space="preserve">
-    <value>'{PropertyName}' dovrebbe essere uguale a '{ComparisonValue}'.</value>
+    <value>'{PropertyName}'은(는) '{ComparisonValue}'이어야 합니다.</value>
   </data>
   <data name="exact_length_error" xml:space="preserve">
-    <value>'{PropertyName}' deve essere lungo {MaxLength} caratteri. Hai inserito {TotalLength} caratteri.</value>
+    <value>'{PropertyName}'은(는) {MaxLength} 글자이하의 문자열이어야 합니다. 입력한 문자열은 {TotalLength} 글자 입니다.</value>
   </data>
   <data name="exclusivebetween_error" xml:space="preserve">
-    <value>'{PropertyName}' deve essere compreso tra {From} e {To} (esclusi). Hai inserito {Value}.</value>
+    <value>'{PropertyName}'은(는) {From} 이상 {To} 미만이어야 합니다. 입력한 값은 {Value}입니다.</value>
   </data>
   <data name="greaterthanorequal_error" xml:space="preserve">
-    <value>'{PropertyName}' deve essere maggiore o uguale a '{ComparisonValue}'.</value>
+    <value>'{PropertyName}'은(는) '{ComparisonValue}'이상이어야 합니다.</value>
   </data>
   <data name="greaterthan_error" xml:space="preserve">
-    <value>'{PropertyName}' deve essere maggiore di '{ComparisonValue}'.</value>
+    <value>'{PropertyName}'은(는) '{ComparisonValue}'보다 커야 합니다.</value>
   </data>
   <data name="inclusivebetween_error" xml:space="preserve">
-    <value>'{PropertyName}' deve essere compreso tra {From} e {To}. Hai inserito {Value}.</value>
+    <value>'{PropertyName}'은(는) {From} 이상 {To} 이하여야 합니다. 입력한 값은 {Value}입니다.</value>
   </data>
   <data name="length_error" xml:space="preserve">
-    <value>'{PropertyName}' deve essere lungo tra i {MinLength} e {MaxLength} caratteri. Hai inserito {TotalLength} caratteri.</value>
+    <value>'{PropertyName}'은(는) {MinLength} 글자 이상 {MaxLength} 글자 이하여야 합니다. 입력한 문자열은 {TotalLength} 글자입니다.</value>
   </data>
   <data name="lessthanorequal_error" xml:space="preserve">
-    <value>'{PropertyName}' deve essere minore o uguale a '{ComparisonValue}'.</value>
+    <value>'{PropertyName}'은(는) '{ComparisonValue}' 이하여야 합니다.</value>
   </data>
   <data name="lessthan_error" xml:space="preserve">
-    <value>'{PropertyName}' deve essere minore di '{ComparisonValue}'.</value>
+    <value>'{PropertyName}'은(는) '{ComparisonValue}' 보다 작아야 합니다.</value>
   </data>
   <data name="notempty_error" xml:space="preserve">
-    <value>'{PropertyName}' non può essere vuoto.</value>
+    <value>'{PropertyName}'은(는) 최소한 한 글자 이상이어야 합니다.</value>
   </data>
   <data name="notequal_error" xml:space="preserve">
-    <value>'{PropertyName}' non puo essere uguale a '{ComparisonValue}'.</value>
+    <value>'{PropertyName}'은(는) '{ComparisonValue}'와 달라야 합니다.</value>
   </data>
   <data name="notnull_error" xml:space="preserve">
-    <value>'{PropertyName}' non puo essere vuoto.</value>
+    <value>'{PropertyName}'은(는) 반드시 입력해야 합니다.</value>
   </data>
   <data name="predicate_error" xml:space="preserve">
-    <value>La condizione non è verificata per '{PropertyName}'.</value>
+    <value>'{PropertyName}'이(가) 유효하지 않습니다.</value>
   </data>
   <data name="regex_error" xml:space="preserve">
-    <value>'{PropertyName}' non è nel formato corretto.</value>
+    <value>'{PropertyName}'이(가) 잘못된 형식입니다.</value>
+  </data>
+  <data name="scale_precision_error" xml:space="preserve">
+    <value>'{PropertyName}'은(는) 소수점 이하 {expectedScale}자리 이하, 총 {expectedPrecision}자리 이하의 숫자여야 합니다. 입력한 값은 소수점 이하 {actualScale}자리이고 총 {digits}자리입니다.</value>
   </data>
 </root>
