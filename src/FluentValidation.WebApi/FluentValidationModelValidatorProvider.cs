@@ -16,7 +16,7 @@
 // The latest version of this file can be found at http://www.codeplex.com/FluentValidation
 #endregion
 
-namespace FluentValidation.Mvc.WebApi
+namespace FluentValidation.WebApi
 {
 	using System;
 	using System.Collections.Generic;
@@ -41,13 +41,13 @@ namespace FluentValidation.Mvc.WebApi
 		/// <summary>
 		/// Initializes the FluentValidationModelValidatorProvider using the default options and adds it in to the ModelValidatorProviders collection.
 		/// </summary>
-		public static void Configure(Action<FluentValidationModelValidatorProvider> configurationExpression = null) {
+		public static void Configure(HttpConfiguration configuration, Action<FluentValidationModelValidatorProvider> configurationExpression = null) {
 			configurationExpression = configurationExpression ?? delegate { };
 
 			var provider = new FluentValidationModelValidatorProvider();
 			configurationExpression(provider);
-		    GlobalConfiguration.Configuration.Services.Replace(typeof(IBodyModelValidator), new FluentValidationBodyModelValidator());
-			GlobalConfiguration.Configuration.Services.Add(typeof(ModelValidatorProvider), provider);
+		    configuration.Services.Replace(typeof(IBodyModelValidator), new FluentValidationBodyModelValidator());
+			configuration.Services.Add(typeof(ModelValidatorProvider), provider);
 		}
 
 		public override IEnumerable<ModelValidator> GetValidators(ModelMetadata metadata, IEnumerable<ModelValidatorProvider> validatorProviders)
